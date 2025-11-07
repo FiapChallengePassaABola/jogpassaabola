@@ -2,43 +2,43 @@
   {
     "name": "Marta",
     "posição": "Atacante",
-    "gols": 118,
+    "gols": 248,
     "imagem": "../public/marta.png"
   },
   {
     "name": "Mia Hamm",
     "posição": "Atacante",
-    "gols": 158,
+    "gols": 221,
     "imagem": "../public/miahamm.png"
   },
   {
     "name": "Formiga",
     "posição": "Meio-campista",
-    "gols": 35,
+    "gols": 53,
     "imagem": "../public/formiga.png"
   },
   {
     "name": "Amanda Gutierrez",
     "posição": "Atacante",
-    "gols": 27,
+    "gols": 77,
     "imagem": "../public/gutierrez.png"
   },
   {
     "name": "Vic Albuquerque",
     "posição": "Atacante",
-    "gols": 48,
+    "gols": 147,
     "imagem": "../public/albuquerque.png"
   },
   {
     "name": "Ketlen",
     "posição": "Atacante",
-    "gols": 75,
+    "gols": 207,
     "imagem": "../public/ketlen.png"
   },
   {
     "name": "Homare Sawa",
     "posição": "Meio-campista",
-    "gols": 83,
+    "gols": 172,
     "imagem": "../public/sawa.png"
   },
   {
@@ -50,19 +50,31 @@
   {
     "name": "Rozeira",
     "posição": "Atacante",
-    "gols": 22,
+    "gols": 116,
     "imagem": "../public/rozeira.png"
   },
   {
     "name": "Dudinha",
     "posição": "Atacante",
-    "gols": 19,
+    "gols": 25,
     "imagem": "../public/dudinha.png"
   },
   {
     "name": "Megan Rapinoe",
     "posição": "Meio-campista ofensiva",
-    "gols": 63,
+    "gols": 125,
     "imagem": "../public/rapione.png"
+  },
+  {
+    "name": "Bia Menezes",
+    "posição": "lateral esquerda",
+    "gols": 10,
+    "imagem": "../public/menezes.png"
+  },
+  {
+    "name": "Millie Bright",
+    "posição": "zagueira",
+    "gols": 25,
+    "imagem": "../public/bright.png"
   }
 ]
