@@ -3,78 +3,78 @@
     "name": "Marta",
     "posição": "Atacante",
     "gols": 248,
-    "imagem": "../public/marta.png"
+    "imagem": "marta.png"
   },
   {
     "name": "Mia Hamm",
     "posição": "Atacante",
     "gols": 221,
-    "imagem": "../public/miahamm.png"
+    "imagem": "miahamm.png"
   },
   {
     "name": "Formiga",
     "posição": "Meio-campista",
     "gols": 53,
-    "imagem": "../public/formiga.png"
+    "imagem": "formiga.png"
   },
   {
     "name": "Amanda Gutierrez",
     "posição": "Atacante",
     "gols": 77,
-    "imagem": "../public/gutierrez.png"
+    "imagem": "gutierrez.png"
   },
   {
     "name": "Vic Albuquerque",
     "posição": "Atacante",
     "gols": 147,
-    "imagem": "../public/albuquerque.png"
+    "imagem": "albuquerque.png"
   },
   {
     "name": "Ketlen",
     "posição": "Atacante",
     "gols": 207,
-    "imagem": "../public/ketlen.png"
+    "imagem": "ketlen.png"
   },
   {
     "name": "Homare Sawa",
     "posição": "Meio-campista",
     "gols": 172,
-    "imagem": "../public/sawa.png"
+    "imagem": "sawa.png"
   },
   {
     "name": "Hope Solo",
     "posição": "Goleira",
     "gols": 0,
-    "imagem": "../public/hope.png"
+    "imagem": "hope.png"
   },
   {
     "name": "Rozeira",
     "posição": "Atacante",
     "gols": 116,
-    "imagem": "../public/rozeira.png"
+    "imagem": "rozeira.png"
   },
   {
     "name": "Dudinha",
     "posição": "Atacante",
     "gols": 25,
-    "imagem": "../public/dudinha.png"
+    "imagem": "dudinha.png"
   },
   {
     "name": "Megan Rapinoe",
     "posição": "Meio-campista ofensiva",
     "gols": 125,
-    "imagem": "../public/rapione.png"
+    "imagem": "rapione.png"
   },
   {
     "name": "Bia Menezes",
     "posição": "lateral esquerda",
     "gols": 10,
-    "imagem": "../public/menezes.png"
+    "imagem": "menezes.png"
   },
   {
     "name": "Millie Bright",
     "posição": "zagueira",
     "gols": 25,
-    "imagem": "../public/bright.png"
+    "imagem": "bright.png"
   }
 ]
