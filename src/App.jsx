@@ -75,7 +75,6 @@ export default function App() {
                     <>
                       <img
                         src={`/${player.imagem}`}
-                        alt={player.name}
                         className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-2 object-cover"
                       />
                     </>
