@@ -94,7 +94,7 @@ export default function App() {
                     <div className="flex items-center justify-center h-32 sm:h-40">
                       <img
                         src={misterio}
-                        className="w-32 h-32 sm:w-75 sm:h-75 rounded-full mx-auto mb-2 object-cover"
+                        className="w-32 h-32 sm:w-65 sm:h-65 rounded-full mx-auto mb-2 object-cover"
                         alt="mistério"
                       />
                     </div>
