@@ -57,7 +57,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-4">
-      <h1 className="text-3xl sm:text-7xl font-bold mb-7 text-center">
+      <h1 className="text-3xl sm:text-6xl font-bold mb-7 text-center">
         <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
           NEXT
         </span>{" "}
@@ -87,7 +87,7 @@ export default function App() {
                   {isRevealed ? (
                     <img
                       src={`/${player.imagem}`}
-                      className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-2 object-cover"
+                      className="w-32 h-32 sm:w-55 sm:h-55 rounded-full mx-auto mb-2 object-cover"
                       alt={player.name}
                     />
                   ) : (
