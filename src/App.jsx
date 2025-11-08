@@ -87,14 +87,14 @@ export default function App() {
                   {isRevealed ? (
                     <img
                       src={`/${player.imagem}`}
-                      className="w-32 h-32 sm:w-55 sm:h-55 rounded-full mx-auto mb-2 object-cover"
+                      className="w-32 h-32 sm:w-75 sm:h-75 rounded-full mx-auto mb-2 object-cover"
                       alt={player.name}
                     />
                   ) : (
                     <div className="flex items-center justify-center h-32 sm:h-40">
                       <img
                         src={misterio}
-                        className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-2 object-cover"
+                        className="w-32 h-32 sm:w-75 sm:h-75 rounded-full mx-auto mb-2 object-cover"
                         alt="mistério"
                       />
                     </div>
