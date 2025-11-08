@@ -76,5 +76,23 @@
     "posição": "zagueira",
     "gols": 25,
     "imagem": "bright.png"
+  },
+  {
+    "name": "Lucy Bronze",
+    "posição": "lateral direita",
+    "gols": 25,
+    "imagem" : "bronze.png"
+  },
+  {
+    "name": "Barbra Banda",
+    "posição": "Atacante",
+    "gols": 112,
+    "imagem" : "banda.png"
+  },
+  {
+    "name": "Debinha",
+    "posição": "Atacante",
+    "gols": 138,
+    "imagem" : "debinha.png"
   }
 ]

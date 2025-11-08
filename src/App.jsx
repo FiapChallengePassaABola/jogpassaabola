@@ -8,10 +8,19 @@ export default function App() {
   const [revealed, setRevealed] = useState([]);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [usedPlayers, setUsedPlayers] = useState([]); // 👈 Jogadoras já usadas
 
   useEffect(() => {
-    const shuffled = [...playersData].sort(() => 0.5 - Math.random());
-    setSelectedPlayers(shuffled.slice(0, 5));
+    // 🔁 Filtra jogadoras ainda não usadas
+    const availablePlayers = playersData.filter(
+      (p) => !usedPlayers.includes(p.name)
+    );
+
+    // 🔀 Embaralha e escolhe 5 jogadoras
+    const shuffled = [...availablePlayers].sort(() => 0.5 - Math.random());
+    const chosen = shuffled.slice(0, 5);
+
+    setSelectedPlayers(chosen);
     setRevealed([]);
   }, [round]);
 
@@ -25,10 +34,13 @@ export default function App() {
 
     setScore((prev) => prev + player.gols);
 
+    // 🧠 Marca as jogadoras dessa rodada como usadas
+    setUsedPlayers((prev) => [...prev, ...selectedPlayers.map((p) => p.name)]);
+
     if (round === 1) {
-      setTimeout(() => setRound(2), 300);
+      setTimeout(() => setRound(2), 400);
     } else {
-      setTimeout(() => setGameOver(true), 500);
+      setTimeout(() => setGameOver(true), 600);
     }
   };
 
@@ -36,6 +48,7 @@ export default function App() {
     setRound(1);
     setScore(0);
     setGameOver(false);
+    setUsedPlayers([]); // 🔄 Resetar jogadoras usadas
 
     const shuffled = [...playersData].sort(() => 0.5 - Math.random());
     setSelectedPlayers(shuffled.slice(0, 5));
@@ -44,7 +57,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-4">
-      <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-center">
+      <h1 className="text-3xl sm:text-7xl font-bold mb-7 text-center">
         <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
           NEXT
         </span>{" "}
@@ -54,11 +67,11 @@ export default function App() {
       {!gameOver ? (
         <>
           <div className="flex flex-col sm:flex-row sm:gap-8 items-center text-center mb-6">
-            <p className="text-lg sm:text-xl mb-2 sm:mb-0">
+            <p className="text-lg sm:text-2xl mb-2 sm:mb-0">
               Rodada: <span className="font-semibold">{round} / 2</span>
             </p>
-            <p className="text-lg sm:text-xl">
-              Pontuação total: <span className="font-semibold">{score}</span>
+            <p className="text-lg sm:text-2xl bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded-2xl">
+              ⚽ Gols: <span className="font-semibold">{score}</span>
             </p>
           </div>
 
@@ -72,17 +85,17 @@ export default function App() {
                   onClick={() => handleReveal(index)}
                 >
                   {isRevealed ? (
-                    <>
-                      <img
-                        src={`/${player.imagem}`}
-                        className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-2 object-cover"
-                      />
-                    </>
+                    <img
+                      src={`/${player.imagem}`}
+                      className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-2 object-cover"
+                      alt={player.name}
+                    />
                   ) : (
                     <div className="flex items-center justify-center h-32 sm:h-40">
                       <img
                         src={misterio}
                         className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-2 object-cover"
+                        alt="mistério"
                       />
                     </div>
                   )}
@@ -112,7 +125,6 @@ export default function App() {
           )}
         </>
       ) : (
-        // Tela final
         <div className="text-center mt-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">
             🏆 Fim do jogo!
@@ -125,7 +137,7 @@ export default function App() {
             onClick={handleRestart}
             className="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-xl text-lg sm:text-xl font-semibold transition-all"
           >
-            Jogar novamente 🔁
+            Novo Jogo 🔁
           </button>
         </div>
       )}
